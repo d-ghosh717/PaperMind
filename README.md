@@ -1,4 +1,4 @@
-# 🧠 PaperMind – AI Research Paper Analyzer
+# 🧠 PaperMind 
 
 ### AI-Powered PDF Analysis, Research Insights & Study Assistant
 
@@ -27,6 +27,12 @@ Instead of spending hours reading academic papers, technical reports, journals, 
 - Future work suggestions
 
 All AI processing runs locally using **Ollama**, ensuring privacy, zero API costs, and complete control over your data.
+
+---
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
@@ -260,10 +266,6 @@ H --> I[Save To History]
 ---
 
 # 📸 Screenshots
-
-### Dashboard
-
-![Dashboard](screenshots/dashboard.png)
 
 ### Processing
 
