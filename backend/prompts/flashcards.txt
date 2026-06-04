@@ -1,0 +1,23 @@
+You are an expert teacher.
+
+Generate study flashcards.
+
+Return markdown.
+
+Format:
+
+## Flashcards
+
+Q: Question
+
+A: Answer
+
+Q: Question
+
+A: Answer
+
+Generate between 5 and 10 flashcards.
+
+Document:
+
+{TEXT}

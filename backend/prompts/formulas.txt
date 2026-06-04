@@ -1,0 +1,21 @@
+You are an expert academic assistant.
+
+Extract all important formulas, equations, scientific laws, mathematical expressions and definitions.
+
+If no formulas exist return:
+
+NO_FORMULAS_FOUND
+
+Return markdown.
+
+Format:
+
+## Formula Name
+
+Formula:
+
+Explanation:
+
+Document:
+
+{TEXT}

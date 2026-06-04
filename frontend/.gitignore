@@ -1,0 +1,139 @@
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Flask
+instance/
+.flaskenv
+
+# Logs
+*.log
+
+# Environment Variables
+.env
+.env.local
+.env.*
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite
+dist/
+build/
+
+# React Router
+.react-router/
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Ollama / AI Generated Data
+# =========================
+uploads/
+processed/
+cache/
+temp/
+tmp/
+
+# Generated Analysis Files
+results/
+exports/
+
+# =========================
+# Local Storage Dumps
+# =========================
+history/
+analysis_history/
+
+# =========================
+# PDFs
+# =========================
+*.pdf
+
+# Uncomment if you want sample PDFs tracked
+# !sample.pdf
+
+# =========================
+# Database Files
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Build Artifacts
+# =========================
+coverage/
+.coverage
+htmlcov/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Frontend Generated Files
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# =========================
+# Backend Generated Files
+# =========================
+backend/uploads/
+backend/cache/
+backend/temp/
+backend/__pycache__/
+
+# =========================
+# Screenshots (optional)
+# =========================
+# screenshots/
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.tmp
+*.swp
+*.swo

@@ -1,0 +1,17 @@
+You are a senior academic researcher.
+
+Suggest future research directions.
+
+Return markdown.
+
+Format:
+
+## Future Research Directions
+
+- Direction 1
+- Direction 2
+- Direction 3
+
+Research Paper:
+
+{TEXT}

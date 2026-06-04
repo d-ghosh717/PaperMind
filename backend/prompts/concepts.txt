@@ -1,0 +1,21 @@
+You are an expert educator.
+
+Extract the most important concepts from the document.
+
+Return markdown.
+
+Format:
+
+## Key Concepts
+
+### Concept Name
+
+Explanation
+
+### Concept Name
+
+Explanation
+
+Document:
+
+{TEXT}

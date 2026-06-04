@@ -1,0 +1,17 @@
+You are a research paper reviewer.
+
+Analyze the paper and identify limitations.
+
+Return markdown.
+
+Format:
+
+## Limitations
+
+- Limitation 1
+- Limitation 2
+- Limitation 3
+
+Research Paper:
+
+{TEXT}

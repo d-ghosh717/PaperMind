@@ -1,0 +1,418 @@
+.paper {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font: var(--font-heading);
+  font-size: var(--font-size-5);
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.paperName {
+  margin: 0;
+  font: var(--font-body);
+  color: var(--color-neutral-11);
+}
+
+.inlineError {
+  margin-bottom: var(--space-4);
+  padding: var(--space-4);
+  background: rgba(229, 72, 77, 0.12);
+  border: 1px solid var(--color-error-9);
+  border-radius: var(--radius-4);
+  font: var(--font-body);
+  color: var(--color-neutral-12);
+}
+
+.tabsContainer {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-6);
+  overflow: hidden;
+}
+
+.tabsList {
+  display: flex;
+  border-bottom: 1px solid var(--color-glass-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tab {
+  flex: 1;
+  min-height: 58px;
+  padding: var(--space-4);
+  background: transparent;
+  border: none;
+  color: var(--color-neutral-11);
+  font: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  position: relative;
+}
+
+.tab:hover {
+  color: var(--color-accent-9);
+  background: rgba(255, 122, 0, 0.05);
+}
+
+.tab.active {
+  color: var(--color-accent-9);
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-accent-9);
+}
+
+.tabStatus {
+  display: block;
+  margin-top: var(--space-1);
+  font: var(--font-caption);
+  color: var(--color-accent-9);
+}
+
+.tabContent {
+  padding: var(--space-6);
+}
+
+.section {
+  margin-bottom: var(--space-6);
+}
+
+.loadingSection {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  color: var(--color-neutral-11);
+  font: var(--font-body);
+}
+
+.loadingDot {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-round);
+  background: var(--color-accent-9);
+  box-shadow: 0 0 24px rgba(255, 122, 0, 0.55);
+  animation: pulse 1.2s var(--ease) infinite;
+}
+
+.sectionTitle {
+  font: var(--font-subheading);
+  font-size: var(--font-size-3);
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.sectionContent {
+  font: var(--font-body);
+  color: var(--color-neutral-11);
+  line-height: 1.8;
+}
+
+.emptyState {
+  padding: var(--space-6);
+  background: rgba(229, 72, 77, 0.12);
+  border: 1px solid var(--color-error-9);
+  border-radius: var(--radius-4);
+}
+
+.emptyText {
+  margin: 0;
+  font: var(--font-body);
+  color: var(--color-neutral-12);
+}
+
+.keyPoints {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.keyPoint {
+  padding: var(--space-3);
+  margin-bottom: var(--space-2);
+  background: rgba(255, 122, 0, 0.05);
+  border-left: 3px solid var(--color-accent-9);
+  border-radius: var(--radius-3);
+  font: var(--font-body);
+  color: var(--color-neutral-12);
+}
+
+.formulaList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.formulaItem {
+  padding: var(--space-5);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-4);
+}
+
+.formulaLatex {
+  font-size: var(--font-size-3);
+  color: var(--color-accent-9);
+  margin-bottom: var(--space-3);
+  overflow-x: auto;
+  padding: var(--space-3);
+}
+
+.formulaDescription {
+  font: var(--font-body);
+  color: var(--color-neutral-11);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.copyButton {
+  padding: var(--space-2) var(--space-4);
+  background: transparent;
+  color: var(--color-accent-9);
+  border: 1px solid var(--color-accent-9);
+  border-radius: var(--radius-3);
+  font: var(--font-caption);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.copyButton:hover {
+  background: var(--color-accent-9);
+  color: white;
+}
+
+.flashcardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.flashcard {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.flashcardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flashcardInner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-6);
+  font: var(--font-subheading);
+  text-align: center;
+  color: var(--color-neutral-12);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+}
+
+.flashcardFace p {
+  margin: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.flashcardBack {
+  transform: rotateY(180deg);
+  border-color: var(--color-accent-9);
+  background: rgba(255, 122, 0, 0.08);
+}
+
+.flashcardControls {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.flashcardButton {
+  padding: var(--space-3) var(--space-5);
+  background: transparent;
+  color: var(--color-neutral-12);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-4);
+  font: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.flashcardButton:hover {
+  background: var(--color-glass-bg);
+  border-color: var(--color-accent-9);
+  color: var(--color-accent-9);
+}
+
+.flashcardButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.flashcardCounter {
+  font: var(--font-body);
+  color: var(--color-neutral-11);
+}
+
+.quizContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quizQuestion {
+  margin-bottom: var(--space-6);
+}
+
+.questionText {
+  font: var(--font-subheading);
+  font-size: var(--font-size-3);
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.option {
+  padding: var(--space-4);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-4);
+  font: var(--font-body);
+  color: var(--color-neutral-12);
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  text-align: left;
+}
+
+.option:hover {
+  background: rgba(255, 122, 0, 0.1);
+  border-color: var(--color-accent-9);
+}
+
+.option.selected {
+  background: rgba(255, 122, 0, 0.2);
+  border-color: var(--color-accent-9);
+}
+
+.option.correct {
+  background: rgba(48, 164, 108, 0.2);
+  border-color: var(--color-success-9);
+}
+
+.option.incorrect {
+  background: rgba(229, 72, 77, 0.2);
+  border-color: var(--color-error-9);
+}
+
+.explanation {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: rgba(100, 181, 246, 0.1);
+  border-left: 3px solid var(--color-soft-blue);
+  border-radius: var(--radius-3);
+  font: var(--font-body);
+  color: var(--color-neutral-11);
+}
+
+.quizControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-6);
+}
+
+.quizScore {
+  font: var(--font-subheading);
+  font-size: var(--font-size-3);
+  color: var(--color-accent-9);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.85);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: var(--space-4);
+  }
+
+  .tabsList {
+    overflow-x: auto;
+  }
+
+  .tab {
+    white-space: nowrap;
+    padding: var(--space-3);
+  }
+
+  .flashcard {
+    height: 250px;
+  }
+
+  .flashcardControls {
+    flex-direction: column;
+  }
+}

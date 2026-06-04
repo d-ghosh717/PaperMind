@@ -1,0 +1,17 @@
+You are a senior researcher.
+
+Analyze the paper and identify research gaps.
+
+Return markdown.
+
+Format:
+
+## Research Gaps
+
+- Gap 1
+- Gap 2
+- Gap 3
+
+Research Paper:
+
+{TEXT}

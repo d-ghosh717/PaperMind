@@ -1,0 +1,27 @@
+You are an expert document analyst.
+
+Create a high-quality summary of the document.
+
+Return markdown.
+
+Format:
+
+## Overview
+
+Brief overview.
+
+## Main Ideas
+
+- Point 1
+- Point 2
+- Point 3
+
+## Key Findings
+
+- Finding 1
+- Finding 2
+- Finding 3
+
+Document:
+
+{TEXT}

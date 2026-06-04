@@ -1,0 +1,22 @@
+html {
+  font: var(--font-body);
+  color: var(--color-neutral-12);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, rgba(255, 167, 38, 0.15) 100%);
+  min-height: 100vh;
+}
+
+body {
+  background: transparent;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

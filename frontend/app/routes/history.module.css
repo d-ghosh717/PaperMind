@@ -1,0 +1,140 @@
+.history {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font: var(--font-heading);
+  font-size: var(--font-size-5);
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.paperList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.paperCard {
+  padding: var(--space-5);
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.paperInfo {
+  min-width: 0;
+}
+
+.paperTitle {
+  margin: 0 0 var(--space-2) 0;
+  font: var(--font-subheading);
+  font-size: var(--font-size-3);
+  color: var(--color-neutral-12);
+  overflow-wrap: anywhere;
+}
+
+.paperDate {
+  margin: 0;
+  font: var(--font-caption);
+  color: var(--color-neutral-11);
+}
+
+.paperActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.viewButton {
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-accent-9);
+  color: white;
+  border: none;
+  border-radius: var(--radius-4);
+  font: var(--font-body);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+}
+
+.viewButton:hover {
+  background: var(--color-accent-10);
+  transform: translateY(-2px);
+}
+
+.deleteButton {
+  padding: var(--space-3);
+  background: transparent;
+  color: var(--color-error-9);
+  border: 1px solid var(--color-error-9);
+  border-radius: var(--radius-4);
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  display: inline-flex;
+  align-items: center;
+}
+
+.deleteButton:hover {
+  background: var(--color-error-9);
+  color: white;
+}
+
+.emptyState {
+  padding: var(--space-9);
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-4);
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 56px;
+  height: 56px;
+  color: var(--color-neutral-9);
+  margin-bottom: var(--space-4);
+}
+
+.emptyText {
+  margin: 0;
+  font: var(--font-subheading);
+  color: var(--color-neutral-11);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: var(--space-4);
+  }
+
+  .paperCard {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .paperActions,
+  .viewButton {
+    width: 100%;
+  }
+
+  .viewButton {
+    text-align: center;
+  }
+}

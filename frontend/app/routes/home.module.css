@@ -1,0 +1,220 @@
+.home {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-9) var(--space-6);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-9);
+  align-items: center;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-accent-9);
+  border-radius: var(--radius-round);
+  color: var(--color-accent-9);
+  font: var(--font-caption);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.headline {
+  font: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1.1;
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.headlineGradient {
+  background: linear-gradient(135deg, var(--color-accent-9) 0%, var(--color-amber-glow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtext {
+  font: var(--font-subheading);
+  color: var(--color-neutral-11);
+  max-width: 500px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-accent-9);
+  color: white;
+  border: none;
+  border-radius: var(--radius-4);
+  font: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  box-shadow: 0 4px 24px rgba(255, 122, 0, 0.3);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.primaryButton:hover {
+  background: var(--color-accent-10);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(255, 122, 0, 0.4);
+}
+
+.secondaryButton {
+  padding: var(--space-4) var(--space-6);
+  background: transparent;
+  color: var(--color-neutral-12);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-4);
+  font: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.secondaryButton:hover {
+  background: var(--color-glass-bg);
+  border-color: var(--color-accent-9);
+  color: var(--color-accent-9);
+}
+
+.heroRight {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floatingCards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floatingCard {
+  position: absolute;
+  padding: var(--space-5);
+  animation: float 6s ease-in-out infinite;
+}
+
+.floatingCard:nth-child(1) {
+  top: 10%;
+  right: 10%;
+  animation-delay: 0s;
+}
+
+.floatingCard:nth-child(2) {
+  top: 40%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.floatingCard:nth-child(3) {
+  bottom: 15%;
+  right: 15%;
+  animation-delay: 4s;
+}
+
+.cardTitle {
+  font: var(--font-subheading);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-3) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cardIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-9);
+}
+
+.cardContent {
+  color: var(--color-neutral-11);
+  font: var(--font-caption);
+}
+
+.formula {
+  font-family: "KaTeX_Main", serif;
+  font-size: var(--font-size-3);
+  color: var(--color-accent-9);
+  margin-top: var(--space-2);
+}
+
+.chartPlaceholder {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(90deg, var(--color-accent-9) 0%, var(--color-soft-blue) 100%);
+  border-radius: var(--radius-3);
+  opacity: 0.3;
+  margin-top: var(--space-2);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: var(--space-6) var(--space-4);
+    gap: var(--space-6);
+  }
+
+  .heroRight {
+    height: 400px;
+  }
+
+  .headline {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    justify-content: center;
+  }
+}

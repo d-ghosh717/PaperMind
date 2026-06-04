@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  transition: all 0.3s ease;
+}
+
+.light {
+  background: #f8f8f8;
+  color: #222;
+  min-height: 100vh;
+}
+
+.dark {
+  background: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #d4af37;
+}
+
+.mode-btn {
+  border: none;
+  cursor: pointer;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: #d4af37;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.mode-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Upload Section */
+
+.upload-box {
+  border: 2px dashed #d4af37;
+  border-radius: 20px;
+  padding: 60px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: rgba(212, 175, 55, 0.03);
+}
+
+.upload-box h2 {
+  margin-bottom: 25px;
+  font-size: 34px;
+}
+
+.file-input {
+  margin-bottom: 20px;
+}
+
+.upload-btn {
+  border: none;
+  cursor: pointer;
+  background: #d4af37;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Uploaded File Info */
+
+.paper-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d4af37;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.paper-info h3 {
+  color: #d4af37;
+  margin-bottom: 5px;
+}
+
+.paper-info p {
+  opacity: 0.8;
+}
+
+/* Results */
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.dark .card {
+  background: #1f1f1f;
+  box-shadow: none;
+}
+
+.card h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+/* Summary Card */
+
+.summary-card {
+  min-height: 500px;
+}
+
+/* Gap Card */
+
+.gap-card {
+  min-height: 300px;
+}
+
+/* Markdown Styling */
+
+.summary-card h1,
+.summary-card h2,
+.summary-card h3,
+.summary-card h4,
+.gap-card h1,
+.gap-card h2,
+.gap-card h3,
+.gap-card h4 {
+  color: #d4af37;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.summary-card p,
+.gap-card p {
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.summary-card ul,
+.summary-card ul,
+.gap-card ul,
+.gap-card ol {
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.summary-card li,
+.gap-card li {
+  margin-bottom: 10px;
+}
+
+.summary-card strong,
+.gap-card strong {
+  color: #d4af37;
+}
+
+.summary-card code,
+.gap-card code {
+  background: rgba(212, 175, 55, 0.15);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Loading Overlay */
+
+.loading {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  min-width: 320px;
+}
+
+.dark .loading-box {
+  background: #1f1f1f;
+}
+
+.loading-box h2 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.loading-box p {
+  opacity: 0.8;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .paper-info {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .upload-box h2 {
+    font-size: 28px;
+  }
+}
